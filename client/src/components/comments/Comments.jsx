@@ -67,7 +67,7 @@ const Comments = ({ postId }) => {  // ✅ Correct destructuring
       ) : data?.length > 0 ? (
         data.map((comment) => (
           <div className="comment" key={comment.id}>
-            <img src={comment.profilePicture} alt="Commenter" />
+            <img src={comment.profilePic} alt="Commenter" />
             <div className="info">
               <span>{comment.name}</span>
               <p>{comment.desc}</p>
